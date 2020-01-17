@@ -1,0 +1,145 @@
+/* Large desktop :1920px. */
+@media (min-width: 1920px) {
+    .container{width: 1230px}
+    .header-area {padding-top: 80px}
+    .about-content {margin-left: 0px}
+    .about-area::before, .about-area.three::before {left: -45px}
+    .testimonial-wrapper.two{padding-left: 160px; padding-right: 160px}
+    .blog-thumbnail img{width: 100%}
+    .slider-area {height: 830px}
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+    .container{width: 970px}
+    .section-title h2, .package-content h2 {font-size: 28px}
+    .package-content h3 {font-size: 25px}
+    .about-content .section-title h4{display: none}
+    .food-area{padding-bottom: 70px; padding-top: 70px}
+    .about-area::before, .about-area.three::before {height: 100%}
+    .single-table {padding: 46px 25px 25px}
+    .main-menu ul li a {padding: 17px 15px}
+    .blog-title > h3 {font-size: 12px}
+    .publish-date {width: 50px}
+    .slider-content h2 {font-size: 40px}
+    .about-content.pt-25 {padding-top: 0px}
+    .testimonial-wrapper {padding-top: 25px; padding-bottom: 45px; padding-left: 55px; padding-right: 55px}
+    .testimonial-wrapper.two {padding-top: 55px; padding-bottom: 65px}
+    .testimonial-content p {margin-bottom: 15px; line-height: 22px}
+    .testimonial-owl.owl-carousel .owl-controls {bottom: -35px}
+    .two .testimonial-owl.owl-carousel .owl-controls {bottom: -45px}
+    .two .package-content {padding-top: 120px}
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{width:750px} 
+    .main-menu ul li:nth-child(4), .service-area, .search-btn, .slider-img{display: none}
+    .slider-area {height: 580px;}
+    .banner-content h1 {font-size: 50px; margin-bottom: 10px}
+    .banner-content h3{padding-top: 100px}
+    .slider-content h2 {font-size: 42px}
+    .package-content h3, .package-content h4{font-size: 20px}
+    .package-content h2 {font-size: 18px}
+    .footer-bottom p, .footer-bottom a {text-align: center}
+    .about-content {margin-left: 0px; padding-top: 55px; padding-bottom: 55px}
+    .about-wrapper {margin-right: 0; width: 100%; margin-bottom: 30px}
+    .about-wrapper img{width: 100%}
+    .content-wrapper {line-height: 0}
+    .food-area{padding-top: 70px; padding-bottom: 70px}
+    .header-area, .news-sidebar-widgets{padding-top: 50px}
+    .testimonial-wrapper{margin-top: 50px}
+    .blog-area.single{padding-top: 70px}
+    .single-blog.blog-area{padding-top: 122px}
+    .news-single-widget:last-child{margin-bottom: 0}
+    .testimonial-area.two .video-area, .testimonial-area.two .testimonial-wrapper, .about-image, .about-image img {width: 100%}
+    .col-md-4:nth-child(3) .single-blog, .col-md-4:nth-child(4) .single-blog{margin-bottom: 0}
+    .about-image {position: static; width: 100%}
+    .main-menu ul li a {font-size: 14px;padding: 17px 12px}
+    .package-content, .subscribe-area  {padding-top: 75px}
+    .event-area, .menu-area, .package-content, .testimonial-wrapper, .blog-area, .food-area, .detail-area.our-blog-area, .contact-area   {padding-top: 55px}
+    .subscribe-area, .contact-area, .food-area {padding-bottom: 55px}
+    .about-area, .package-area.pac{margin-top: 95px}
+    .owl-controls {bottom: -50px}
+    .menu-area, .testimonial-wrapper, .event-area.three {padding-bottom: 95px}
+    .testimonial-area{margin-bottom: 60px;}
+    .about-area.two{margin-top: 55px}
+    .about-wrapper, .testimonial-area.two, .about-area.service{margin-bottom: 0;}
+    .about-area.two .about-content, .contact-area.mid, .contact-area.one {padding-bottom: 0}
+    .about-area.three, .package-img.one.three, .testimonial-wrapper.two{margin-top: 0}
+    .about-area.sin, .contact-form-area{margin-bottom: 55px;}
+    .contact-area.one{padding-top: 0}
+}
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container {width:300px}
+    .slider-area {height: 430px;}
+    .about-content .section-title h4, .slider-img, .header-sticky.sticky{display: none}
+    .about-content {margin-left: 0; padding-top: 45px; padding-bottom: 45px}
+    .section-title h2 {font-size: 28px}
+    .single-table {padding: 46px 25px 25px}
+    .video-bg {margin-right: 0px}
+    .package-content h2, .package-content h3 {font-size: 25px}
+    .package-content h4 {font-size: 20px}
+    .footer-bottom p, .footer-bottom a {text-align: center}
+    .subscribe-area, .event-area{padding-bottom: 70px; padding-top: 70px}
+    .event-area.service{padding-top: 0px}
+    .about-wrapper {margin-right: 0; width: 100%; margin-bottom: 30px}
+    .about-wrapper img, .testimonial-area.two .video-area, .testimonial-area.two .testimonial-area, .blog-thumbnail img, .sub-left, .sub-right, .testimonial-area.two .video-area, .testimonial-area.two .testimonial-wrapper, .about-image img, .about-image{width: 100%}
+    .package-area.two.mt-65.pt-160.pb-190.bg-pink, .about-area {margin-top: 0}
+    .single-food-type{padding-bottom: 70px}
+    .two .package-content {padding-left: 0px}
+    .col-md-3:last-child .single-food-type{padding-bottom: 0}
+    #mc-embedded-subscribe-form {padding: 10px 0 0;}
+    .content-wrapper {line-height: 0}
+    .menu-area.two{padding-top: 70px; margin-top: 0}
+    .package-content.three{padding-top: 70px}
+    .package-content.four, .package-area.two .package-content{padding-bottom: 50px}
+    #mc-embedded-subscribe-form .default-btn {padding: 8px 20px}
+    .header-area.header-sticky, .news-sidebar-widgets {padding-top: 25px}
+    .slider-content h4,.package-content {padding-top: 50px}
+    .footer-area .subscribe-area {padding-top: 70px}
+    .testimonial-wrapper, .package-img {margin-top: 50px}
+    .about-area.two {margin-top: 70px}
+    .single-blog, .contact-form-area, .testimonial-area, .about-area.two.mb-130{margin-bottom: 80px};
+    .col-md-4:last-child .single-blog{margin-bottom: 0}
+    .testimonial-wrapper{padding-left: 20px; padding-right: 20px}
+    .quote {padding: 20px 30px 30px}
+    ul.children_comment {padding-left: 10px}
+    .author {margin-right: 12px}
+    .publish-date {width: 45px}
+    .blog-title > h3 {font-size: 11px;}
+    .subscribe-area.blog{padding-top: 0}
+    .col-md-4:last-child .single-blog{margin-bottom: 0}
+    .menu-owl.owl-carousel .owl-controls, .event-owl.owl-carousel .owl-controls {bottom: -40px}
+    .testimonial-area.onepage{margin-bottom: 50px}
+    .about-image {position: static; width: 100%}
+    .slider-content h4, .slider-content h3 {font-size: 22px}
+    .slider-content h2{font-size: 25px}
+    .blog-area.two, .subscribe-area.menu, .contact-area.one {padding-top: 0}
+    .blog-area.single {padding-top: 70px}
+    .package-content, .subscribe-area  {padding-top: 75px}
+    .event-area, .menu-area, .package-content, .testimonial-wrapper, .blog-area, .food-area, .detail-area.our-blog-area, .contact-area   {padding-top: 55px}
+    .single-food-type{padding-bottom: 30px}
+    .subscribe-area, .food-area, .contact-area {padding-bottom: 55px}
+    .about-area.two{margin-top: 55px}
+    .owl-controls {bottom: -50px}
+    .menu-area, .testimonial-wrapper, .event-area.three {padding-bottom: 95px}
+    .package-area.two, .package-area.pac {margin-top: 95px}
+    .testimonial-area{margin-bottom: 60px;}
+    .about-area.sin, .contact-form-area{margin-bottom: 55px;}
+    .about-area.two{margin-top: 55px}
+    .about-wrapper, .testimonial-area.two, .about-area.service{margin-bottom: 0;}
+    .about-area.two .about-content, .contact-area.mid{padding-bottom: 0}
+    .package-img.one.three, .testimonial-wrapper.two {margin-top: 0px}
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:450px}
+    .table-head h3::after, .table-body ul::after {width: 335px}
+    .publish-date {width: 60px}
+    .blog-title > h3 {font-size: 13px;}
+    .slider-content h4, .slider-content h3 {font-size: 25px}
+    .slider-content h2 {font-size: 28px}
+}

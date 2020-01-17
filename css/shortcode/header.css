@@ -1,0 +1,319 @@
+/* -----------------------------------
+Template Name: Panshi - Catering Service HTML Template
+Template URI: https://devitems.com/html/food-preview/
+Description: This is html5 template
+Author: HasTech
+Author URI: https://devitems.com/
+Version: 1.0
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+.logo a {display: inline-block}
+.fixed {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+.content-wrapper {text-align: right;}
+.main-menu {display: inline-block}
+.main-menu ul {}
+.main-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.main-menu ul li a {
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Playfair Display",serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 17px 23px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.main-menu ul li a:focus{
+    text-decoration: none;
+}
+.main-menu ul li:last-child a{padding-right: 0}
+.main-menu > nav > ul > li:hover > a, .main-menu > nav > ul > li.active > a {color: #d4a762;}
+.main-menu ul li ul {
+    background: #ffffff none repeat scroll 0 0;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding: 5px 18px;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 160px;
+    z-index: 999;
+}
+.main-menu ul li:hover > ul {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; 
+    visibility: visible;
+}
+.main-menu ul li ul li a {}
+.main-menu ul li ul li {
+    display: block;
+    margin: 0;
+    padding: 7px 0;
+}
+.main-menu ul li ul li a {
+    color: #252525;
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 0;
+    text-transform: capitalize;
+}
+.main-menu ul li ul span {
+    float: right;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 22px;
+}
+.main-menu ul li ul li:hover > a {padding-left: 5px;color: #C2A762}
+.main-menu ul li ul li a:before {display: none;}
+.main-menu ul li ul li > ul {
+    left: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 17%;
+    visibility: hidden;
+}
+.main-menu.text-left span {float: right;}
+.mobile-menu-area, .mean-container .mean-bar:after {display: none}
+.mean-container .mean-bar {
+    background: transparent none repeat scroll 0 0;
+    min-height: 0;
+    padding: 0;
+}
+.mean-container a.meanmenu-reveal {
+    border: 1px solid #fff;
+    color: #ffffff;
+    margin-top: -60px;
+    padding: 4px 5px;
+    position: absolute;
+}
+.two .mean-container a.meanmenu-reveal {
+    border: 1px solid #2F2F2F;
+    color: #2F2F2F;
+}
+.two .mean-container a.meanmenu-reveal span {background-color: #2F2F2F}
+.mean-container a.meanmenu-reveal span {background-color: #fff}
+.mean-container .mean-nav {margin-top: 15px;}
+.headroom {
+    -webkit-transition: -webkit-transform 200ms linear 0s;
+    transition: -webkit-transform 200ms linear 0s;
+    transition: transform 200ms linear 0s;
+    transition: transform 200ms linear 0s, -webkit-transform 200ms linear 0s;
+    will-change: transform;
+}
+.headroom--pinned {-webkit-transform: translateY(0%);transform: translateY(0%);}
+.headroom--unpinned {-webkit-transform: translateY(-100%);transform: translateY(-100%);}
+.intelligent-header {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.intelligent-header.headroom--pinned {}
+.intelligent-header.headroom--not-top {
+    background: #ffffff none repeat scroll 0 0;
+    padding: 10px 0;
+}
+.header-sticky.sticky {
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+            animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    background: rgba(0, 0, 0, 0.68) none repeat scroll 0 0;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.header-area.two.header-sticky.sticky {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+}
+.sticky .main-menu > nav > ul > li {
+  padding: 9px 0;
+}
+.sticky .logo {
+  padding: 15px 0 0px;
+}
+.header-area .sticky {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4)
+}
+.menu-style-toggle nav {
+    margin-right: -30px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+.menu-style-toggle nav.menu-open {
+    margin-right: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+.menu-style-toggle nav {
+    float: left;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.main-menu.mean-menu.menu-style-toggle.text-right {float: right;}
+.mobile-header {
+    background: #ffffff none repeat scroll 0 0;
+    display: none;
+    left: 0;
+    margin: auto;
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo img {
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+.sticky .logo img {
+  width: 75%;
+}
+.menu-icon {
+    border: 1px solid #464646;
+    box-sizing: content-box;
+    color: #464646;
+    cursor: pointer;
+    font-weight: 700;
+    height: 22px;
+    line-height: 22px;
+    padding: 4px 5px;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    top: 25px;
+    width: 22px;
+}
+.menu-icon span{background-color: #333333;
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+    box-sizing: content-box
+}
+.mobile-menu-area {
+    background-color: #fff;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.mobile-menu-area .menu-close {
+    background-color: transparent;
+    border: 2px solid #858585;
+    border-radius: 50%;
+    color: #858585;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+	margin-bottom:30px;
+}
+.mobile-menu-area .menu-close:hover {
+    color: #433a8b;
+    border-color: #433a8b;
+}
+.mobile-menu-area .menu-close i {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    padding-right: 2px;
+}
+.sticky .menu-toggle {margin-top: 32px;}
+.search-btn {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
+  top: 4px;
+}
+.search {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    top: 39px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 216px;
+    z-index: 9999;
+}
+#search-form > input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  color: #252525;
+  height: 40px;
+  border: 2px solid #cacaca;
+}
+#search-form > input::-moz-placeholder {color: #252525;} 
+#search-form > input::-webkit-input-placeholder {color: #252525;}
+#search-form > button {
+  background: #d4a762 none repeat scroll 0 0;
+  border: 2px solid #c5c596;
+  color: #ffffff;
+  font-size: 30px;
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 43px;
+}
+#search-form > button:hover{
+    background: #9f7a40;
+    border: 2px solid #939369;
+}
+.search-menu {
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: auto;
+    color: #919191;
+    font-size: 20px;
+    position: relative;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.search-menu:hover{color:#D4A762}
+.open .search {
+    display: block;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    z-index: 2;
+}
+.mean-container .mean-nav ul > li:hover > a {
+  color: #D4A762;
+  margin-left: 5px;
+}

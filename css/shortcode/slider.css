@@ -1,0 +1,191 @@
+/* -----------------------------------
+Template Name: Panshi - Catering Service HTML Template
+Template URI: https://devitems.com/html/food-preview/
+Description: This is html5 template
+Author: HasTech
+Author URI: https://devitems.com/
+Version: 1.0
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+.slider-area {position: relative; overflow: hidden;}
+.slider-area.two {position: relative}
+.single-slide, .single-slide.two{position: relative}
+.slider-area img {width: 100%;}
+.slider-area, .slider-content, .single-slide, .owl-item, .owl-stage, .slider-wrapper, .owl-stage-outer, .slider-content .container, .slider-content .row, .slider-content .col-lg-10, .slider-content .text-content-wrapper, .slider-content .col-lg-12, .slider-content .text-content-wrapper, .slider-content .text-content, .slider-content .display-table, .slider-content .display-table-cell{
+    height: 100%;
+} 
+.single-slide:after, .two .single-slide:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.47);
+    content: "";
+    z-index: 9;
+}
+.two .single-slide:after{
+    background: rgba(255, 255, 255, 0.85);
+}
+.slider-content{z-index: 99; position: relative}
+.text-content-wrapper, .slider-area img {width: 100%;}
+.slider-content .text-content-wrapper {display: table;}
+.slider-content .text-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner-btn {
+    clear: both;
+    display: block;
+}
+.banner-btn {
+  background: transparent;
+  color: #d4a762;
+  display: inline-block;
+  border: 1px solid #d4a762;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 39px;
+  overflow: hidden;
+  padding: 0 30px;
+  border-radius: 3px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.banner-btn::before, .banner-btn::after, .banner-btn span::before, .banner-btn span::after {
+    background-color: rgba(212, 167, 98, 0.5);
+    content: "";
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s ease 0s;
+    width: 0;
+    z-index: -1;
+}
+.banner-btn::after, .banner-btn span::before {
+    left: auto;
+    right: 0;
+}
+.banner-btn span::before, .banner-btn span::after {
+    transition-delay: 0.4s;
+}
+.banner-btn:hover{
+    color: #fff;
+    z-index: 999;
+    border: 1px solid rgba(212, 167, 98, 0.75);
+}
+.banner-btn:hover span{z-index: 9999; color: #fff}
+.banner-btn:hover::before, .banner-btn:hover::after, .banner-btn:hover span::before, .banner-btn:hover span::after {
+    width: 250px;
+}
+.banner-btn:active {
+    background-color: #d4a762;
+}
+.slider-content h4 {
+  color: #fff;
+  font-family: "Playball",cursive;
+  font-size: 36px;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.slider-content h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 8px;
+    font-family: 'Playball', cursive;
+    font-weight: 400;
+}
+.slider-content h3 {
+    color: #fff;
+    font-size: 42px;
+    font-family: 'Playball', cursive;
+    font-weight: 400;
+}
+.two .slider-content h4, .two .slider-content h2, .two .slider-content h3, .two .main-menu ul li a{color: #303030}
+.slider-area .owl-item.active .slider-content h4, .slider-area .owl-item.active .slider-content h2, .slider-area .owl-item.active .slider-content h3{
+    -webkit-animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+            animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+}
+.two.slider-area .owl-item.active .slider-content h4, .two.slider-area .owl-item.active .slider-content h2, .two.slider-area .owl-item.active .slider-content h3{
+    -webkit-animation: 1000ms ease-in-out 0s normal both 1 running fadeInLeft;
+            animation: 1000ms ease-in-out 0s normal both 1 running fadeInLeft;
+} 
+.slider-img{
+    -webkit-animation: 1000ms ease-in-out 0s normal both 1 running fadeInRight;
+            animation: 1000ms ease-in-out 0s normal both 1 running fadeInRight;
+}
+.slider-area .owl-item.active .slider-content h4 {-webkit-animation-delay: 600ms;animation-delay: 600ms} 
+.slider-area .owl-item.active .slider-content h2 {-webkit-animation-delay: 1000ms;animation-delay: 1000ms}
+.slider-area .owl-item.active .slider-content h3 {-webkit-animation-delay: 1400ms;animation-delay: 1400ms}  
+.slider-area.two .owl-item.active .slider-content h4 {-webkit-animation-delay: 600ms;animation-delay: 600ms} 
+.slider-area.two .owl-item.active .slider-content h2 {-webkit-animation-delay: 1000ms;animation-delay: 1000ms}
+.slider-area.two .owl-item.active .slider-content h3 {-webkit-animation-delay: 1400ms;animation-delay: 1400ms}  
+.slider-area .owl-item.active .slider-content .slider-img {-webkit-animation-delay: 1400ms;animation-delay: 1400ms}  
+.owl-nav div {
+    background: rgba(255, 255, 255, 0.15);
+    color: #D4A762;
+    font-size: 30px;
+    border-radius: 3px;
+    height: 40px;
+    left: -46px;
+    line-height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+    z-index: 999;
+}
+.owl-nav .owl-next {left: auto; right: -46px;}
+.slider-area:hover .owl-nav div {left: 0;}
+.slider-area:hover .owl-nav .owl-next {left: auto;  right: 0;}
+.owl-nav div:hover{background: rgba(212, 167, 98, 0.25); color: #fff}
+.single-slide{background-position: top center; background-size: cover}
+.one-page-arrow {
+    border: 1px solid #d4a762;
+    border-radius: 20px;
+    bottom: 20px;
+    height: 32px;
+    left: 50%;
+    margin-left: -4px;
+    position: absolute;
+    text-align: center;
+    width: 16px;
+    z-index: 2;
+}
+.one-page-arrow i {
+    color: #d4a762;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  opacity: 1;
+}
+.slider-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 384px;
+    height: 575px;
+    content: "";
+}
+.slider-area {
+    height: 730px;
+}

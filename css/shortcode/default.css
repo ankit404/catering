@@ -1,0 +1,767 @@
+/* -----------------------------------
+Template Name: Panshi - Catering Service HTMP Template
+Template URI: https://devitems.com/html/food-preview/
+Description: This is html5 template
+Author: HasTech
+Author URI: https://devitems.com/
+Version: 1.0
+NOTE: This is main style sheet of template, 
+This file contains the styling for the actual Template. 
+Please do not change anything here! write in a custom.css file if required!
+
+*/
+/*================================================
+[  Table of contents  ]
+================================================
+01. General
+02. Text color
+03. Input
+04. Scrollup
+05. Basic margin padding
+06. Page section padding 
+07. Page section margin 
+08. Custom cloumn
+09. Background variation set 
+10. Section Title
+11. Pagination
+12. Breadcrumb
+13. Banner
+ 
+======================================
+[ End table content ]
+======================================*/
+
+/*************************
+    01. General
+*************************/
+@import url('https://fonts.googleapis.com/css?family=Playball|Playfair+Display:400,700,900|Poppins:400,500');
+html, body {height: 100%;}
+body {
+	color: #606060;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+    font-family: 'Poppins', sans-serif;
+}
+.clear{clear:both}
+.fix {overflow: hidden}
+.block {display: block}
+.container { width: 1200px}
+img{
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+	height:auto;
+}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; margin: 0; padding: 0}
+a{
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+a:focus{
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    color: #303030;
+    text-decoration: none;
+}
+a:active, a:hover {
+    outline: 0 none;
+}
+a,
+button,
+input {
+    outline: medium none;
+    color: #606060;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+button{border: 0}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: inherit}
+label {
+    font-size: 15px;
+    font-weight: 400;
+    color: #606060;
+}
+*::-moz-selection {
+    background: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    color: #fff;
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+    color: #fff;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.mark, mark {
+    background: #4fc1f0 none repeat scroll 0 0;
+    color: #ffffff;
+}	font-weight: 600;
+}
+.f-left {float: left}
+.f-right {float: right}
+p{
+	line-height: 24px;
+	font-size: 14px
+}
+ul{
+	list-style: outside none none;
+	margin: 0;
+	padding: 0
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #969696;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #969696;
+    opacity:1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #969696;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #969696;
+}
+.default-btn {
+    background: #d4a762 none repeat scroll 0 0;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 9px 20px 7px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 9;
+}
+.default-btn::before {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0.5, 1);
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    z-index: 1;
+}
+.default-btn span {z-index: 2 ;position: relative}
+.default-btn:hover span, .default-btn:focus span, .default-btn:active span {color: #D4A762}
+.newsletter-form .default-btn:hover span, .newsletter-form .default-btn:focus span, .newsletter-form .default-btn:active span {color: #D4A762; border: none}
+.default-btn:hover:before, .default-btn:focus:before, .default-btn:active:before {
+    opacity: 1;
+    transform: scale(1, 1);
+    border: none;
+}
+input,
+select,
+textarea {
+    -webkit-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+}
+/*************************
+    02. Text color
+*************************/
+.text-white { color: #fff ;}
+/*************************
+    03. Input
+*************************/
+input, textarea {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+    box-shadow: none;
+    color: #969696;
+    font-size: 14px;
+    height: 42px;
+    padding-left: 17px;
+    width: 100%;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {color: #969696;} 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #969696;}
+select {
+    width: 100%;
+    background: #eceff8;
+    border: 2px solid #eceff8;
+    height: 45px;
+    padding-left: 10px;
+    box-shadow: none;
+    font-size: 14px;
+    color: #626262;
+}
+option {
+    background: #fff;
+    border: 0px solid #626262;
+    padding-left: 10px;
+    font-size: 14px;
+}
+input:focus, textarea:focus {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: #CCCCCC;
+}
+textarea {
+    height: 100px;
+    padding: 12px 17px;
+    resize: vertical;
+    width: 100%;
+}
+/*************************
+    04. Scrollup
+*************************/
+#scrollUp {
+    border-radius: 2px;
+    bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+    font-size: 24px;
+    height: 40px;
+    line-height: 45px;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+    z-index: 200;
+}
+#scrollUp:hover {
+}
+@keyframes scroll-top {
+0% {
+    bottom: 0;
+    opacity: 0;
+}
+50% {
+    bottom: 50%;
+    opacity: 1;
+}
+100% {
+    bottom: 75%;
+    opacity: 0;
+}
+}
+@keyframes scroll-top {
+0% {
+    bottom: 0;
+    opacity: 0;
+}
+50% {
+    bottom: 50%;
+    opacity: 1;
+}
+100% {
+    bottom: 75%;
+    opacity: 0;
+}
+}
+@keyframes scroll-top {
+0% {
+    bottom: 0;
+    opacity: 0;
+}
+50% {
+    bottom: 50%;
+    opacity: 1;
+}
+100% {
+    bottom: 75%;
+    opacity: 0;
+}
+}
+#scrollUp:hover i {
+    animation: 800ms linear 0s normal none infinite running scroll-top;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin-bottom: -25px;
+    position: absolute;
+    width: 100%;
+}
+#scrollUp i {
+    color: #ffffff;
+}
+#scrollUp {
+    background: #D4A762 none repeat scroll 0 0;
+}
+/*************************
+    05. Basic margin padding
+*************************/
+.m-0 {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.p-0 {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+/*************************
+        Margin top
+*************************/
+.mt-0 { margin-top: 0 }
+.mt-10 { margin-top: 10px }
+.mt-15 { margin-top: 15px }
+.mt-20 { margin-top: 20px }
+.mt-25 { margin-top: 25px }
+.mt-30 { margin-top: 30px }
+.mt-35 { margin-top: 35px }
+.mt-40 { margin-top: 40px }
+.mt-45 { margin-top: 45px }
+.mt-50 { margin-top: 50px }
+.mt-55 { margin-top: 55px }
+.mt-60 { margin-top: 60px }
+.mt-65 { margin-top: 65px }
+.mt-70 { margin-top: 70px }
+.mt-75 { margin-top: 75px }
+.mt-80 { margin-top: 80px }
+.mt-85 { margin-top: 85px }
+.mt-90 { margin-top: 90px }
+.mt-95 { margin-top: 95px }
+.mt-100 { margin-top: 100px }
+.mt-105 { margin-top: 105px }
+.mt-110 { margin-top: 110px }
+.mt-115 { margin-top: 115px }
+.mt-120 { margin-top: 120px }
+.mt-125 { margin-top: 125px }
+.mt-130 { margin-top: 130px }
+.mt-135 { margin-top: 135px }
+.mt-140 { margin-top: 140px }
+.mt-145 { margin-top: 145px }
+.mt-150 { margin-top: 150px }
+.mt-157 { margin-top: 157px }
+.mt-195 { margin-top: 195px }
+/*************************
+      Margin right
+*************************/
+.mr-0 { margin-right: 0px }
+.mr-10 { margin-right: 10px }
+.mr-15 { margin-right: 15px }
+.mr-20 { margin-right: 20px }
+.mr-30 { margin-right: 30px }
+.mr-40 { margin-right: 40px }
+.mr-50 { margin-right: 50px }
+.mr-60 { margin-right: 60px }
+.mr-70 { margin-right: 70px }
+.mr-80 { margin-right: 80px }
+.mr-90 { margin-right: 90px }
+.mr-100 { margin-right: 100px }
+.mr-110 { margin-right: 110px }
+.mr-120 { margin-right: 120px }
+.mr-130 { margin-right: 130px }
+.mr-140 { margin-right: 140px }
+.mr-150 { margin-right: 150px }
+/*************************
+    Margin bottom
+*************************/
+.mb-0 { margin-bottom: 0 }
+.mb-5 { margin-bottom: 5 }
+.mb-10 { margin-bottom: 10px }
+.mb-15 { margin-bottom: 15px }
+.mb-20 { margin-bottom: 20px }
+.mb-23 { margin-bottom: 23px }
+.mb-25 { margin-bottom: 25px }
+.mb-30 { margin-bottom: 30px }
+.mb-35 { margin-bottom: 35px }
+.mb-40 { margin-bottom: 40px }
+.mb-45 { margin-bottom: 45px }
+.mb-50 { margin-bottom: 50px }
+.mb-55 { margin-bottom: 55px }
+.mb-60 { margin-bottom: 60px }
+.mb-65 { margin-bottom: 65px }
+.mb-70 { margin-bottom: 70px }
+.mb-75 { margin-bottom: 75px }
+.mb-80 { margin-bottom: 80px }
+.mb-85 { margin-bottom: 85px }
+.mb-90 { margin-bottom: 90px }
+.mb-95 { margin-bottom: 95px }
+.mb-100 { margin-bottom: 100px }
+.mb-105 { margin-bottom: 105px }
+.mb-110 { margin-bottom: 110px }
+.mb-115 { margin-bottom: 115px }
+.mb-120 { margin-bottom: 120px }
+.mb-125 { margin-bottom: 125px }
+.mb-128 { margin-bottom: 128px }
+.mb-130 { margin-bottom: 130px }
+.mb-135 { margin-bottom: 135px }
+.mb-140 { margin-bottom: 140px }
+.mb-145 { margin-bottom: 145px }
+.mb-150 { margin-bottom: 150px }
+.mb-220 { margin-bottom: 220px }
+/*************************
+    Margin left
+*************************/
+.ml-0 { margin-left: 0 }
+.ml-10 { margin-left: 10px }
+.ml-15 { margin-left: 15px }
+.ml-20 { margin-left: 20px }
+.ml-30 { margin-left: 30px }
+.ml-40 { margin-left: 40px }
+.ml-50 { margin-left: 50px }
+.ml-60 { margin-left: 60px }
+.ml-70 { margin-left: 70px }
+.ml-80 { margin-left: 80px }
+.ml-90 { margin-left: 90px }
+.ml-100 { margin-left: 100px }
+.ml-110 { margin-left: 110px }
+.ml-120 { margin-left: 120px }
+.ml-130 { margin-left: 130px }
+.ml-140 { margin-left: 140px }
+.ml-150 { margin-left: 150px }
+/*************************
+    Padding top
+*************************/
+.pt-0 { padding-top: 0 }
+.pt-10 { padding-top: 10px }
+.pt-15 { padding-top: 15px }
+.pt-20 { padding-top: 20px }
+.pt-23 { padding-top: 23px }
+.pt-25 { padding-top: 25px }
+.pt-30 { padding-top: 30px }
+.pt-35 { padding-top: 35px }
+.pt-40 { padding-top: 40px }
+.pt-45 { padding-top: 45px }
+.pt-50 { padding-top: 50px }
+.pt-55 { padding-top: 55px }
+.pt-60 { padding-top: 60px }
+.pt-65 { padding-top: 65px }
+.pt-66 { padding-top: 66px }
+.pt-70 { padding-top: 70px }
+.pt-72 { padding-top: 72px }
+.pt-75 { padding-top: 75px }
+.pt-80 { padding-top: 80px }
+.pt-85 { padding-top: 85px }
+.pt-90 { padding-top: 90px }
+.pt-95 { padding-top: 95px }
+.pt-100 { padding-top: 100px }
+.pt-105 { padding-top: 105px }
+.pt-110 { padding-top: 110px }
+.pt-115 { padding-top: 115px }
+.pt-120 { padding-top: 120px }
+.pt-122 { padding-top: 122px }
+.pt-123 { padding-top: 123px }
+.pt-124 { padding-top: 124px }
+.pt-125 { padding-top: 125px }
+.pt-130 { padding-top: 130px }
+.pt-135 { padding-top: 135px }
+.pt-140 { padding-top: 140px }
+.pt-145 { padding-top: 145px }
+.pt-150 { padding-top: 150px }
+.pt-152 { padding-top: 152px }
+.pt-155 { padding-top: 155px }
+.pt-157 { padding-top: 157px }
+.pt-160 { padding-top: 160px }
+.pt-195 { padding-top: 195px }
+/*************************
+    Padding right
+*************************/
+.pr-0 { padding-right: 0 }
+.pr-10 { padding-right: 10px }
+.pr-15 { padding-right: 15px }
+.pr-20 { padding-right: 20px }
+.pr-30 { padding-right: 30px }
+.pr-40 { padding-right: 40px }
+.pr-50 { padding-right: 50px }
+.pr-60 { padding-right: 60px }
+.pr-70 { padding-right: 70px }
+.pr-80 { padding-right: 80px }
+.pr-90 { padding-right: 90px }
+.pr-100 { padding-right: 100px }
+.pr-110 { padding-right: 110px }
+.pr-120 { padding-right: 120px }
+.pr-130 { padding-right: 130px }
+.pr-140 { padding-right: 140px }
+/*************************
+    Padding bottom
+*************************/
+.pb-0 { padding-bottom: 0 }
+.pb-10 { padding-bottom: 10px }
+.pb-15 { padding-bottom: 15px }
+.pb-20 { padding-bottom: 20px }
+.pb-25 { padding-bottom: 25px }
+.pb-30 { padding-bottom: 30px }
+.pb-35 { padding-bottom: 35px }
+.pb-40 { padding-bottom: 40px }
+.pb-45 { padding-bottom: 45px }
+.pb-50 { padding-bottom: 50px }
+.pb-55 { padding-bottom: 55px }
+.pb-60 { padding-bottom: 60px }
+.pb-65 { padding-bottom: 65px }
+.pb-66 { padding-bottom: 66px }
+.pb-70 { padding-bottom: 70px }
+.pb-75 { padding-bottom: 75px }
+.pb-78 { padding-bottom: 78px }
+.pb-80 { padding-bottom: 80px }
+.pb-85 { padding-bottom: 85px }
+.pb-88 { padding-bottom: 88px }
+.pb-90 { padding-bottom: 90px }
+.pb-95 { padding-bottom: 95px }
+.pb-100 { padding-bottom: 100px }
+.pb-105 { padding-bottom: 105px }
+.pb-110 { padding-bottom: 110px }
+.pb-115 { padding-bottom: 115px }
+.pb-118 { padding-bottom: 118px }
+.pb-120 { padding-bottom: 120px }
+.pb-125 { padding-bottom: 125px }
+.pb-128 { padding-bottom: 128px }
+.pb-130 { padding-bottom: 130px }
+.pb-135 { padding-bottom: 135px }
+.pb-140 { padding-bottom: 140px }
+.pb-145 { padding-bottom: 145px }
+.pb-150 { padding-bottom: 150px }
+.pb-185 { padding-bottom: 185px }
+.pb-190 { padding-bottom: 190px }
+.pb-195 { padding-bottom: 195px }
+/*************************
+    Padding left
+*************************/
+.pl-0 { padding-left: 0 }
+.pl-10 { padding-left: 10px }
+.pl-15 { padding-left: 15px }
+.pl-20 { padding-left: 20px }
+.pl-30 { padding-left: 30px }
+.pl-40 { padding-left: 40px }
+.pl-50 { padding-left: 50px }
+.pl-60 { padding-left: 60px }
+.pl-70 { padding-left: 70px }
+.pl-80 { padding-left: 80px }
+.pl-90 { padding-left: 90px }
+.pl-100 { padding-left: 100px }
+.pl-110 { padding-left: 110px }
+.pl-120 { padding-left: 120px }
+.pl-130 { padding-left: 130px }
+.pl-140 { padding-left: 140px }
+.pl-150 { padding-left: 150px }
+/***************************
+    06. Page section padding 
+****************************/
+.ptb-0 { padding: 0 }
+.ptb-10 { padding: 10px 0 }
+.ptb-18 { padding: 18px 0 }
+.ptb-20 { padding: 20px 0 }
+.ptb-30 { padding: 30px 0 }
+.ptb-40 { padding: 40px 0 }
+.ptb-50 { padding: 50px 0 }
+.ptb-60 { padding: 60px 0 }
+.ptb-70 { padding: 70px 0 }
+.ptb-80 { padding: 80px 0 }
+.ptb-90 { padding: 90px 0 }
+.ptb-100 { padding: 100px 0 }
+.ptb-110 { padding: 110px 0 }
+.ptb-120 { padding: 120px 0 }
+.ptb-130 { padding: 130px 0 }
+.ptb-140 { padding: 140px 0 }
+.ptb-150 { padding: 150px 0 }
+/***************************
+    07. Page section margin 
+****************************/
+.mtb-0 { margin: 0 }
+.mtb-10 { margin: 10px 0 }
+.mtb-15 { margin: 15px 0 }
+.mtb-20 { margin: 20px 0 }
+.mtb-30 { margin: 30px 0 }
+.mtb-40 { margin: 40px 0 }
+.mtb-50 { margin: 50px 0 }
+.mtb-60 { margin: 60px 0 }
+.mtb-70 { margin: 70px 0 }
+.mtb-80 { margin: 80px 0 }
+.mtb-90 { margin: 90px 0 }
+.mtb-100 { margin: 100px 0 }
+.mtb-110 { margin: 110px 0 }
+.mtb-120 { margin: 120px 0 }
+.mtb-130 { margin: 130px 0 }
+.mtb-140 { margin: 140px 0 }
+.mtb-150 { margin: 150px 0; }
+/***************************
+    08. Custom cloumn
+****************************/
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10 {float: left;}
+.col-1{width: 10%;}
+.col-2{width: 20%;}
+.col-3{width: 30%;}
+.col-4{width: 40%;}
+.col-5{width: 50%;}
+.col-6{width: 60%;}
+.col-7{width: 70%;}
+.col-8{width: 80%;}
+.col-9{width: 90%;}
+.col-10{width: 100%;}
+/*************************************
+    09. Background variation set 
+**************************************/
+.bg-pink { background: #FFFCF8 }
+.bg-light { background: #F1F1F1 }
+.bg-gray { background: #FAFAFA }
+.transparent-bg { background: transparent }
+.bg-1, .bg-2, .bg-3, .bg-4, .bg-5{
+    background-attachment: scroll; 
+	background-clip: initial; 
+	background-color: rgba(0, 0, 0, 0); 
+	background-origin: initial; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	position: relative; 
+}
+.bg-3 { 
+    background-image: url("../../img/footer/1.jpg");
+    background-position: 55% bottom; 
+}
+/*************************************
+    10. Section Title
+**************************************/
+.section-title h2{
+    color: #d4a762;
+    font-size: 34px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.section-title h4{
+    font-size: 28px;
+    color: #606060;
+    font-family: 'Playball', cursive;
+    font-weight: 400;
+    margin-bottom: 24px; 
+}
+/*************************************
+    11. Pagination
+**************************************/
+.pagination-content .pagination li a {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    color: #303030;
+    display: inline-block;
+    font-size: 13px;
+    height: 38px;
+    line-height: 42px;
+    margin: 0 9px;
+    padding: 0;
+    text-align: center;
+    width: 38px;
+}
+.pagination-content .pagination li a i {font-size: 17px;}
+.pagination-content .pagination li a:hover, .pagination-content .pagination li.active a {
+    background: #EBEBEB none repeat scroll 0 0;
+}
+/*************************************
+    12. Breadcrumb
+**************************************/
+.breadcrumb-area {padding: 256px 0 178px;}
+.breadcrumb-text {position: relative; z-index: 1;}
+.breadcrumb-bar .breadcrumb {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    line-height: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.breadcrumb-text h3 {
+    color: #D4A762;
+    font-family: 'Playfair Display', serif;
+    line-height: 26px;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+    font-size: 36px;
+}
+.breadcrumb-bar li {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 14px;
+    margin: 0 19px;
+    position: relative;
+    text-transform: uppercase;
+}
+.breadcrumb-bar .breadcrumb > li:first-child::before {
+    color: #ffffff;
+    content: "//";
+    display: inline-block;
+    position: absolute;
+    right: -24px;
+    top: 0;
+}
+.breadcrumb-bar .breadcrumb > li + li::before {display: none;}
+.breadcrumb-bar a {color: #ffffff;}
+.breadcrumb-bar a:hover {color: #614a3d;}
+.breadcrumb-bar li:first-child {margin-left: 0;}
+/*************************
+    13. Banner
+*************************/
+.banner-area{
+    background: url(../../img/banner/1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.banner-area:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+}
+.banner-content-wrapper{
+    display: table;
+    height: 400px;
+    z-index: 9;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+.banner-content{
+    display: table-cell;
+    vertical-align: middle;
+    height: 400px;
+}
+.banner-content h2 {
+    color: #fff;
+    font-family: "Playfair Display",serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 90px;
+    text-transform: uppercase;
+}
+.banner-breadcrumb ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.banner-breadcrumb ul li, .banner-breadcrumb ul li a{
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: 'Playball', cursive;
+    font-size: 18px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.banner-breadcrumb ul li i{padding: 0 10px;}
+.banner-breadcrumb ul li:hover a{
+    text-decoration: underline;
+}

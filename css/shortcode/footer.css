@@ -1,0 +1,113 @@
+/* -----------------------------------
+Template Name: Panshi - Catering Service HTMP Template
+Template URI: https://devitems.com/html/coffee-preview/
+Description: This is html5 template
+Author: HasTech
+Author URI: https://devitems.com/
+Version: 1.0
+NOTE: This is Footer style file. All footer related style included in this file.
+
+--------------------------------------*/
+.col-lg-3:nth-child(2) .single-footer-widget {padding-left: 48px;}
+.single-footer-widget > h3 {
+    color: #919191;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+}
+.single-footer-widget > p {
+    color: #919191;
+    font-size: 12px;
+    font-family: 'Playball', cursive;
+    margin-bottom: 0;
+    line-height: 18px;
+}
+.c-info {
+    color: #ffffff;
+    display: block;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.c-info i {font-size: 16px; width: 34px;}
+.single-footer-widget > p.margin {margin-bottom: 24px;}
+.open-time {
+    color: #ffffff;
+    display: block;
+    line-height: 27px;
+}
+.open-time:nth-child(3) {padding-top: 5px;}
+#mc-form {
+  position: relative;
+  width: 700px;
+  margin: auto;
+}
+#mc-form > input {
+    color: #eaeaea;
+    font-size: 13px;
+    height: 38px;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+.newsletter-form input#mc-email::-moz-placeholder {color: #eaeaea;} 
+.newsletter-form input[type="email"]::-webkit-input-placeholder {color: #eaeaea;}
+#mc-form .default-btn {
+  background: #d4a762 none repeat scroll 0 0;
+  border: medium none;
+  color: #ffffff;
+  font-family: "Montserrat",sans-serif;
+  font-size: 14px;
+  height: 40px;
+  line-height: 34px;
+  padding: 0 18px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+    margin-top: 15px;
+}
+#mc-form .default-btn:hover{color: #d4a762 !important }
+#mc-form .default-btn:before {background: #fff none repeat scroll 0 0;z-index: -1}
+.social-figure {
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+}
+.main, .social-hover{display: inline-block;}
+.main a{
+    background: transparent;
+    color: #989898;
+    font-size: 11px;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 3px;
+    text-align: center;
+    width: 30px;
+    border: 1px solid #898989;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    display: block;
+    box-sizing: border-box;
+    top:0; 
+    left: 0;
+}
+.main-menu.footer{display: inherit}
+.footer-links > a:first-child {margin-left: 0;}
+.footer-links {padding-top: 24px;}
+.mailchimp-alerts {color: #ffffff; padding-top: 15px;}
+.footer-bottom{background: #D4A762;}
+.footer-bottom p{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.mc-news {
+    left: -5000px;
+    position: absolute;
+}
+#mce-EMAIL {
+  padding-right: 155px;
+}
